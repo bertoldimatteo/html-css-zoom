@@ -39,3 +39,56 @@
 /* ---------
    main 
 ---------*/
+
+main {
+    height: calc(100% - 28px);
+    background-color: #000;
+}
+
+.main-container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 300px;
+    height: 150px;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.icon-user-first, .user-name {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+.icon-user-first {
+    align-items: flex-start;
+}
+
+.user-name {
+    color: #fff;
+    align-items: flex-end;
+}
+
+.user-name i {
+    color: #cc3c33;
+}
+
+.write1, .write2, .mic-plus-name {
+    display: inline-block;
+    border-radius: 5px;
+}
+.write1, .write2 {
+    background-color: #3370e5;
+    color: #fff;
+    padding: 3px;
+}
+
+.mic-plus-name {
+    background-color: #1f1f1f;
+}
