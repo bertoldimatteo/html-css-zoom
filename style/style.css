@@ -41,9 +41,12 @@
    main 
 ---------*/
 
-main {
-    height: calc(100vh - 60px);
+body {
     background-color: #000;
+}
+
+main {
+    height: calc(100vh - 90px);
     display: flex;
 }
 
@@ -107,4 +110,61 @@ main {
 
 .user-speaker {
     border: 2px solid #76da6c;
+}
+
+/* ---------
+  footer 
+---------*/
+
+footer {
+    background-color: #1f1f1f;
+    color: #a8a8a8;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+}
+
+.footer-container > * {
+    margin: 0 20px;
+}
+
+.col-left, .col-middle, .col-right {
+    width: calc(100% / 3);
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.col-middle {
+    justify-content: center;
+}
+
+.col-right {
+    justify-content: flex-end;
+}
+
+.col-left div, .col-middle div, .col-right div {
+    margin: 5px 0;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+}
+
+.display-icon {
+    color: #67d669;
+}
+
+.btn {
+    padding: 7px 20px;
+    background-color: #a8352e;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
 }
